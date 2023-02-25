@@ -13,6 +13,8 @@ export class AppComponent {
   squareWidth = 200;
   squareHeight = 150;
 
+  appCounter = 0;
+
   testNumberChange(value: number) {
     console.log('testNumberChange is action:', value);
   }

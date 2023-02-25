@@ -1,8 +1,8 @@
-<!-- Project 1 -->
+<!--  Project 1 
 <a routerLink="/project1">Project 1 - มา 4 จ่าย 3</a>
 <router-outlet></router-outlet>
 
-<!-- Project 2 -->
+<!-- Project 2 
 <br>
 <br>
 <span>Project 2</span>
@@ -10,20 +10,20 @@
 <app-project2 [step]="5"></app-project2>
 <app-project2 [step]="10"></app-project2>
 
-<!-- Project 3 -->
+<!-- Project 3 
 <br>
 <br>
 <span>Project 3</span>
 <app-project3 (numberChange)="testNumberChange($event)" [step]="5"></app-project3>
 <app-project3 (numberChange)="testNumberChange($event)" [step]="10"></app-project3>
 
-<!-- Project 4 -->
+<!-- Project 4 
 <br>
 <br>
 <span>Project 4</span>
 <app-p4-max-min-meter [minLabel]="appMinLabel" [maxLabel]="appMaxLabel"></app-p4-max-min-meter>
 
-<!-- Project 5 - Sqaure flex-->
+<!-- Project 5 - Sqaure flex
 <br>
 <br>
 <span>Project 5</span>
@@ -33,4 +33,20 @@
     <button type="button" (click)="squareWidth=50">50px</button>
     <button type="button" (click)="squareWidth=100">100px</button>
     <button type="button" (click)="squareWidth=200">200px</button>
-</div>
+</div> 
+------------------------------------------------------------------------------------------------------------------>
+
+<!-- numberChange คือค่าที่ output.EventEmit ของการกดปุ่ม -->
+
+<!-- Normal Code -->
+<!-- <app-project3 [counter]="appCounter" (counterChange)="appCounter = $event"></app-project3>
+<app-p5-sqaure-flex [divWidth]="appCounter"></app-p5-sqaure-flex> -->
+
+<!-- Nice Code -->
+<!-- มันคือเทคนิค Two way binding -->
+<!-- เกิดจาก Input counter + output counterChange รวมกันด้วยการตั้งชื่อ -->
+<br>
+<span>Project 6</span>
+<app-project3 [(counter)]="appCounter" [step]="10"></app-project3>
+<app-p5-sqaure-flex [divWidth]="appCounter"></app-p5-sqaure-flex>
+
