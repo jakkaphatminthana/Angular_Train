@@ -9,6 +9,7 @@ export class Project3Component {
   @Input() counter = 0;
   @Input() step: number = 1;
   @Output() counterChange = new EventEmitter();
+  @Input() inputDisplay = true;
 
   constructor () { }
   ngOnInit(): void { }
