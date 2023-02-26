@@ -7,6 +7,7 @@ import { Project2Component } from './module/project2/project2.component';
 import { Project3Component } from './module/project3/project3.component';
 import { P4MaxMinMeterComponent } from './module/p4-max-min-meter/p4-max-min-meter.component';
 import { P5SqaureFlexComponent } from './module/p5-sqaure-flex/p5-sqaure-flex.component';
+import { P8ArrayComponent } from './module/p8-array/p8-array.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { P5SqaureFlexComponent } from './module/p5-sqaure-flex/p5-sqaure-flex.co
     Project2Component,
     Project3Component,
     P4MaxMinMeterComponent,
-    P5SqaureFlexComponent
+    P5SqaureFlexComponent,
+    P8ArrayComponent
   ],
   imports: [
     BrowserModule,
