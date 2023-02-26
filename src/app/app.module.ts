@@ -8,6 +8,10 @@ import { Project3Component } from './module/project3/project3.component';
 import { P4MaxMinMeterComponent } from './module/p4-max-min-meter/p4-max-min-meter.component';
 import { P5SqaureFlexComponent } from './module/p5-sqaure-flex/p5-sqaure-flex.component';
 import { P8ArrayComponent } from './module/p8-array/p8-array.component';
+import { HttpClientModule } from '@angular/common/http';
+import { P9TestRequestModule } from './module/p9-test-request/p9-test-request.module';
+
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { P8ArrayComponent } from './module/p8-array/p8-array.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    P9TestRequestModule,
+    InputTextModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

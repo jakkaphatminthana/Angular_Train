@@ -1,0 +1,7 @@
+<div>
+    <label>Name: </label><input type="text" #inputName>
+    <button type="button" (click)="searchBookByName(inputName.value)">ค้นหา</button>
+</div>
+<div *ngFor="let book of bookList">
+    {{ book.isbn }} - {{ book.name }}
+</div>
