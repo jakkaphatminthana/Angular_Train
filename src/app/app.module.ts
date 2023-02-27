@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { P9TestRequestModule } from './module/p9-test-request/p9-test-request.module';
 
 import {InputTextModule} from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,10 @@ import {InputTextModule} from 'primeng/inputtext';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     P9TestRequestModule,
     InputTextModule,
+    TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

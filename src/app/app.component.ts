@@ -15,6 +15,8 @@ export class AppComponent {
 
   appCounter = 0;
 
+  value2: string = "hello PrimeNG";
+
   testNumberChange(value: number) {
     console.log('testNumberChange is action:', value);
   }
