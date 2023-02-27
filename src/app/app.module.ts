@@ -14,6 +14,7 @@ import { P9TestRequestModule } from './module/p9-test-request/p9-test-request.mo
 import {InputTextModule} from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import {TableModule} from 'primeng/table';
+import { P11PrimengTableComponent } from './module/p11-primeng-table/p11-primeng-table.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {TableModule} from 'primeng/table';
     Project3Component,
     P4MaxMinMeterComponent,
     P5SqaureFlexComponent,
-    P8ArrayComponent
+    P8ArrayComponent,
+    P11PrimengTableComponent
   ],
   imports: [
     BrowserModule,
