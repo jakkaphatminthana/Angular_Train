@@ -15,6 +15,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import {TableModule} from 'primeng/table';
 import { P11PrimengTableComponent } from './module/p11-primeng-table/p11-primeng-table.component';
+import { P12ShoppingModule } from './module/p12-shopping/p12-shopping.module';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { P11PrimengTableComponent } from './module/p11-primeng-table/p11-primeng
     P9TestRequestModule,
     InputTextModule,
     TableModule,
+    P12ShoppingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
