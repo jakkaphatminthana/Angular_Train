@@ -95,7 +95,11 @@
 
 <span>Project 12.5 - search</span>
 <br>
-<app-shopping-search (onSearch)="searchProduct($event)"></app-shopping-search>
+<div style="display: flex; column-gap: 0.5em;">
+    <app-shopping-search (onSearch)="searchProduct($event)"></app-shopping-search>
+    <app-shopping-cart [value]="1"></app-shopping-cart>
+</div>
+<br>
 <div>
     <div *ngFor="let product of filteredProducts">
         {{product.name}}

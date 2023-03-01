@@ -36,6 +36,7 @@ import { P12ShoppingModule } from './module/p12-shopping/p12-shopping.module';
     InputTextModule,
     TableModule,
     P12ShoppingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

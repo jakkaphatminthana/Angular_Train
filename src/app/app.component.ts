@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Product } from './module/p12-shopping/model/product';
 
@@ -26,19 +27,16 @@ export class AppComponent {
   // }
 
   //Project 12
-  products: Product[] = [
-    { name: 'Banana', description: 'ผลไม้', price: 10 },
-    { name: 'Apple', description: 'ผลไม้', price: 20 },
-    { name: 'Orange', description: 'ผลไม้', price: 30 },
-    { name: 'Mango', description: 'ผลไม้', price: 40 },
-    { name: 'Pineapple', description: 'ผลไม้', price: 50 },
-    { name: 'Watermelon', description: 'ผลไม้', price: 60 },
-    { name: 'Papaya', description: 'ผลไม้', price: 70 },
-    { name: 'Strawberry', description: 'ผลไม้', price: 80 },
-    { name: 'Peach', description: 'ผลไม้', price: 90 },
-  ];
-
+  products: Product[] = [];
   filteredProducts: Product[] = this.products;
+
+  constructor(private http:HttpClient) {
+    this.http.get<Product[]>('/api/product').subscribe((response) => {
+      console.log(response)
+      this.products = response;
+      this.filteredProducts = this.products;
+    })
+  }
 
   searchProduct(text: string) {
     this.filteredProducts = this.products.filter(product => {
