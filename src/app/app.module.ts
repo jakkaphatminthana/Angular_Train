@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import {TableModule} from 'primeng/table';
 import { P11PrimengTableComponent } from './module/p11-primeng-table/p11-primeng-table.component';
 import { P12ShoppingModule } from './module/p12-shopping/p12-shopping.module';
+import { P13GetSetComponent } from './module/p13-get-set/p13-get-set.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { P12ShoppingModule } from './module/p12-shopping/p12-shopping.module';
     P4MaxMinMeterComponent,
     P5SqaureFlexComponent,
     P8ArrayComponent,
-    P11PrimengTableComponent
+    P11PrimengTableComponent,
+    P13GetSetComponent
   ],
   imports: [
     BrowserModule,
